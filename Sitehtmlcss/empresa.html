@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(71deg, #3debb0 1%, #8956f3 99%)
+        }
+
+        .logo {
+
+            width: 450px;
+            /* largura */
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 6px;
+
+        }
+
+        .link {
+
+            text-align: center;
+            /* Centraliza os elementos dentro do container */
+            margin-top: -25px;
+
+        }
+
+        a {
+            display: inline-block;
+            /* Permite que os links fiquem lado a lado sem quebra de linha */
+            margin: 0 10px;
+            /* Espaçamento entre os links */
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+
+
+        .testedebanda {
+            display: inline-block;
+            background-color: #2556d3;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            /* tamanho da fonte */
+
+        }
+
+        .testedebanda:hover {
+            background-color: #1f018d;
+        }
+
+        .empresa {
+            display: inline-block;
+            background-color: #f21606;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .empresa:hover {
+            background-color: #f1120293;
+        }
+
+        .planos {
+            display: inline-block;
+            background-color: #e7e40e;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .planos:hover {
+            background-color: #c0bd0af6;
+        }
+
+        .voltar {
+
+            display: inline-block;
+            background-color: #f20612;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 28px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-left: 60px;
+            margin-top: 50px;
+        }
+
+        .voltar:hover {
+            background-color: #f1120293;
+        }
+
+        .h11 {
+
+            margin-left: 40%;
+            margin-top: 20px;
+
+        }
+
+        h2 {
+            margin-left: 450px;
+        }
+
+        .p1 {
+            font-size: 25px;
+            margin-left: 40px;
+        }
+
+        h3 {
+            display: inline-block;
+            margin-top: 50px;
+        }
+
+        .missao {
+            margin-left: 130px;
+            font-size: 40px
+        }
+
+        .visao {
+            margin-left: 440px;
+            font-size: 40px;
+        }
+
+        .valores {
+            margin-left: 400px;
+            font-size: 40px;
+        }
+
+        .divp {
+            display: inline-block;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        .p2 {
+            margin-left: 20px;
+        }
+
+        .p3 {
+            margin-left: 600px;
+            margin-top: -55px;
+        }
+
+        .p4 {
+            margin-left: 1100px;
+            margin-top: -50px;
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+    margin-top: 50px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+.hp {
+    margin-left: 30px;
+}
+.ppp {
+    margin-top: -25px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+    </style>
+</head>
+
+<body>
+    
+    <img class="logo" src="img/BN_logotipo.png"
+    alt="Balsasnet">
+
+  <div class="link"> 
+
+   <a class="voltar" href="index.html"><i>início</i></a>
+
+   <a href="//wa.me/559935419166" class="whatsapp-button" target="_blank"> <i>Fale Conosco &#x1F4AC; </i></a>
+
+
+   <a class="testedebanda" target="_blank" href="https://fast.com/pt/"> <i> Teste de velocidade &#x1F3AF; </i> </a>
+
+   <a class= "empresa" href="empresa.html"><i> Nossa empresa </i></a>
+
+   <a class="planos" href="Planos.html"><i> Planos de internet </i> </a>
+
+  </div>
+
+    <h1 class="h11">Nossa empresa</h1>
+    <br>
+    <h2>Com objetivos e muito trabalho, algo se torna realidade.</h2>
+    <br>
+    <div class="p1">
+
+        <p>A Balsas Net foi fundada em 2009 e surgiu como uma pequena lan house. No início, os serviços se resumiam ao
+            acesso a internet e jogos.
+            O tempo mostrou a necessidade de ampliar a atuação da empresa que a cada ano vem inovando, investindo em
+            equipamentos modernos para melhorar <br> o serviço e a experiência dos clientes.
+            <br>
+            <br>
+            Essas inovações fizeram com que a Balsas Net ganhasse mais mercado. Em 2014, veio a primeiro filial de Feira
+            Nova. <br> No ano seguinte, a segunda filial em Nova Colinas. Essas cidades receberam um grande investimento
+            e por
+            consequência cresceram com a nossa chegada.
+            <br>
+            <br>
+            Os próximos passos da empresa estão sendo planejados e executados com bastante entusiasmo rumo ao sucesso.
+            <br> Um
+            dos nossos objetivos é entrega de banda larga com entrega mais garantida ao cliente e serviços adicionais.
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3 class="missao">Missão</h3>
+        <h3 class="visao">Visão</h3>
+        <h3 class="valores">Valores</h3>
+
+    </div>
+
+    <div class="divp">
+
+        <p class="p2">Garantir a excelência na prestação de serviços de internet, <br> interligando pessoas e empresas
+           <br> objetivando sempre a satisfação dos clientes.</p>
+
+        <p class="p3">Ser referência na prestação de serviços de internet, <br> buscando sempre o melhor para os cliente
+        </p>
+
+        <p class="p4">Agilidade, Pontualidade, Honestidade e Compromisso.</p>
+
+    </div>
+
+    <main>
+        
+    </main>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1 class="hp">Rede socias</h1>
+                
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/balsasnet/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/balsasnet" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="//wa.me/559935419166" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Contatos balsasnet</h3>
+                </li>
+
+                <li>
+                    <a href="//wa.me/559935419166" class="footer-link">(99) 3541-9166</a>
+                </li>
+                <li>
+                    <a href="//wa.me/559935419166" class="footer-link">(99) 3541-5188</a>
+                </li>
+        
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Desenvolvedores</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Ryan Reynald</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Nicolas lustosa</a>
+                </li>
+
+                <li>
+                    <a href="//wa.me/3484236917" class="footer-link">Contato: (34) 984236917</a>
+                </li>
+
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Dono da empresa</h3>
+
+                <p>
+                    Manoel frança
+                </p>
+
+               
+        </div>
+
+            <a href="https://www.google.com/maps/place/Balsas+Net/@-7.5167957,-46.0428592,17z/data=!4m16!1m9!4m8!1m0!1m6!1m2!1s0x92d5ef72d9568c1d:0x9ff8c23759d5f0a7!2sAv.+Brasil,+703,+Balsas+-+MA,+65800-000!2m2!1d-46.0402789!2d-7.516801!3m5!1s0x92d5ef72d9568c1d:0x9ff8c23759d5f0a7!8m2!3d-7.516801!4d-46.0402789!16s%2Fg%2F11c45mjgx7?entry=ttu" class="ppp">📍Av, Brasil, 703. Potosi. Balsas-MA. cep:65800-000</a>
+
+        </div>
+    
+        <div id="footer_copyright">
+            &#169
+            2024 all rights reserved
+        </div>
+    </footer>
+
+</body>
+</html>
